@@ -1,4 +1,4 @@
-package exercicioCalculadora;
+package exCalculadora;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;

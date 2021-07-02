@@ -1,4 +1,4 @@
-package exercicioCalculadora;
+package exCalculadora;
 
 public class Calculadora {
 	
