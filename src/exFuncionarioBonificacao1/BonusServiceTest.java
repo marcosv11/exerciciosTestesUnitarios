@@ -12,16 +12,17 @@ class BonusServiceTest {
 	@Test
 	void bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto() {
 		BonusService service = new BonusService();
-		//assertThrows(IllegalArgumentException.class,
-				//() -> service.calculaBonus(new Funcionario("Marcos", LocalDate.now(), new BigDecimal("25000"))));
-		
+		// assertThrows(IllegalArgumentException.class,
+		// () -> service.calculaBonus(new Funcionario("Marcos", LocalDate.now(), new
+		// BigDecimal("25000"))));
+
 		try {
 			service.calculaBonus(new Funcionario("Marcos", LocalDate.now(), new BigDecimal("25000")));
 			fail("nao deu a exception");
 		} catch (Exception e) {
 			assertEquals("Funcionario com osalario maior que o permitido para o bonus", e.getMessage());
 		}
-		
+
 	}
 
 	@Test
